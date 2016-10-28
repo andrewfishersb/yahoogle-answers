@@ -1,3 +1,4 @@
+<h4>{{question.title}}</h4>
 <h5>{{question.user}}</h5>
 <h6>{{question.notes}}</h6>
 <p>
@@ -8,3 +9,5 @@
 {{#each question.answer as |answer|}}
   {{answer-tile answer=answer}}
 {{/each}}
+
+{{new-answer}}

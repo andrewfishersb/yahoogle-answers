@@ -3,16 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   newUpdateFormClicked: false,
   actions:{
-    updateQuestion(askedQuestion){
+    updateQuestion(updatedQuestion){
       var params = {
-        question: this.get('question'),
-        user: this.get('user'),
+        title: this.get('title'),
         notes: this.get('notes')
       }
-      // this.set("question","");
+      // this.set("title","");
       // this.set("user","");
       this.set("newUpdateFormClicked", false);
-      this.sendAction("updateQuestion", askedQuestion, params);
+      this.sendAction("updateQuestion", updatedQuestion, params);
     },
 
 

@@ -5,15 +5,16 @@ export default Ember.Route.extend({
     return this.store.findRecord('question',params.question_id);
   },
   actions:{
-    updateQuestion(question, params) {
+    updateQuestion(updatedQuestion, params) {
         Object.keys(params).forEach(function(key){
           if(params[key]!==undefined && params[key]!=="") {
-            question.set(key, params[key]);
+            updatedQuestion.set(key, params[key]);
           }
         });
-        question.save();
+        updatedQuestion.save();
         this.transitionTo('question');
       },
+      
     //refractor to delete all answers associated as well
     destroyQuestion(question){
       question.destroyRecord();

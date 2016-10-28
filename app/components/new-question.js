@@ -5,17 +5,17 @@ export default Ember.Component.extend({
   actions: {
     submitQuestion(){
       var params = {
-        question: this.get('question') ? this.get('question'):"",
+        title: this.get('title') ? this.get('title'):"",
         user: this.get('user') ? this.get('user'):"",
         notes: this.get('notes') ? this.get('notes'):"",
       };
-      this.set('question',"");
+      this.set('title',"");
       this.set('user',"");
       this.set('notes',"");
       this.set("newQuestionFormClicked",false);
       this.sendAction("submitQuestion",params);
     },
-    
+
 
     hideQuestionForm(){
       this.set("newQuestionFormClicked",false);

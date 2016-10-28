@@ -8,8 +8,8 @@ export default Ember.Component.extend({
       }
     },
     //do i need params and questions here? or in the send action?
-    updateQuestion(askedQuestion,params){
-      this.sendAction("updateQuestion",params, askedQuestion)
+    updateQuestion(updatedQuestion,params){
+      this.sendAction("updateQuestion", updatedQuestion, params);
     }
   }
 });
