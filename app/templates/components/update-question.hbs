@@ -1,1 +1,12 @@
-{{yield}}
+{{#if newUpdateFormClicked}}
+  <form class="form-group">
+    <label>Edit Question</label>
+    {{input class="form-control" value=asked id="question.question" placeholder="test"}}
+    <label>Edit Notes</label>
+    {{input class="form-control" value=notes id="notes" }}
+    <!-- <button class="btn btn-success" {{action "updateQuestion" question}}>Submit</button> -->
+    <button class="btn btn-danger" {{action "hideUpdateForm"}}>Cancel</button>
+  </form>
+{{else}}
+  <button class="btn btn-info" {{action "showUpdateForm"}}>Update</button>
+{{/if}}

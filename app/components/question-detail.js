@@ -6,6 +6,10 @@ export default Ember.Component.extend({
       if(confirm("Are you sure?")){
         this.sendAction("destroyQuestion",question);
       }
+    },
+    //do i need params and questions here? or in the send action?
+    updateQuestion(askedQuestion,params){
+      this.sendAction("updateQuestion",params, askedQuestion)
     }
   }
 });

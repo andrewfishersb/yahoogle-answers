@@ -1,23 +1,23 @@
 {"questions":[
     {
-      "question" : "Do Sea Turtles live for 150 years?",
+      "asked" : "Do Sea Turtles live for 150 years?",
       "notes" : "because they say so in Finding Nemo",
       "answer":"They average around 80 years to 100 years, so even if one has reached 150 years they would not be considered 'still young'",
       "user":"FindingNemoFanatic"
     },{
-      "question" : "What is the longest living animal?",
+      "asked" : "What is the longest living animal?",
       "notes" : "asking for a research project",
       "answer":"There is tortoise which is believed to have lived for 250 years, and a clam that was 507 years old",
       "user" : "ILikeTurtlesZombieKid"
     },{
-      "question" : "What is the main language used for Android or iOS Programming?",
+      "asked" : "What is the main language used for Android or iOS Programming?",
       "notes" : "I want to try my hand at mobile programming",
       "answer":"For Android you would want to learn Java while for iOS the main languages would be Objective-C and Swift",
       "user": "wannabeBillionaire"
 
     },
     {
-      "question" : "Which is faster Merge Sort or Quick Sort",
+      "asked" : "Which is faster Merge Sort or Quick Sort",
       "notes" : "studying my data structures",
       "answer":"They are very similar in best case senarios with a time complexity of 0(nlogn) worst case merge sort is 0(nlogn) but quick sort is 0(n^2)",
       "user":"DataStructureGuru"
