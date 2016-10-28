@@ -4,15 +4,19 @@ export default Ember.Component.extend({
   newAnswerForm: false,
   actions:{
     saveAnswer(){
-      var params = {
-        user: this.get('user'),
-        content: this.get('content'),
-        question: this.get('question')
+      if(!this.get('content')){
+        alert("Please Provide an Answer");
+      }else{
+        var params = {
+          user: this.get('user') ? this.get('user'):"anonymous",
+          content: this.get('content'),
+          question: this.get('question')
+        }
+        this.set('user',"");
+        this.set('content',"");
+        this.set("newAnswerForm",false);
+        this.sendAction("saveAnswer",params);
       }
-      this.set('user',"");
-      this.set('content',"");
-      this.set("newAnswerForm",false);
-      this.sendAction("saveAnswer",params);
     },
 
     showAnswerForm(){

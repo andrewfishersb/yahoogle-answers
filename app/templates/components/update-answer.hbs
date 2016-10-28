@@ -1,1 +1,8 @@
-{{yield}}
+{{#if updateAnswerForm}}
+  <label>Edit Answer</label>
+  {{input class="form-control" value=content id="content" }}
+  <button class="btn btn-success" {{action 'editAnswer'}}>Submit Answer</button>
+  <button class="btn btn-danger" {{action 'hideAnswerForm'}}>Cancel</button>
+{{else}}
+  <button class="btn btn-info" {{action 'showAnswerForm'}}>Edit Answer</button>
+{{/if}}
