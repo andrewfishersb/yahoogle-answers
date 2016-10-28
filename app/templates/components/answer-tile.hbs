@@ -1,5 +1,4 @@
-<h1>Answers</h1>
-
-
-<h3>{{answer.user}}</h3>
-<h4>{{answer.user}}</h4>
+<h3>{{answer.content}}</h3>
+<h4>by {{answer.user}}</h4>
+{{update-answer answer=answer}}
+<button class="btn btn-danger" {{action 'delete' answer}}>Delete</button>

@@ -1,1 +1,11 @@
-{{yield}}
+{{#if newAnswerForm}}
+  <label>Enter Username</label>
+  {{input class="form-control" value=user id="user"}}
+  <label>Enter Answer</label>
+  {{input class="form-control" value=content id="content"}}
+  <button class="btn btn-success" {{action 'saveAnswer'}}>Submit Answer</button>
+  <button class="btn btn-primary" {{action 'hideAnswerForm'}}>Cancel</button>
+
+{{else}}
+  <button class="btn btn-primary" {{action 'showAnswerForm'}}>Add an Answer</button>
+{{/if}}

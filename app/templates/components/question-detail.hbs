@@ -6,8 +6,8 @@
 </p>
 {{update-question question=question updateQuestion="updateQuestion"}}
 <button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
-{{#each question.answer as |answer|}}
+{{#each question.answers as |answer|}}
   {{answer-tile answer=answer}}
 {{/each}}
 
-{{new-answer}}
+{{new-answer saveAnswer="saveAnswer" question=question}}
