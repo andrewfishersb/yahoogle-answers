@@ -1,5 +1,15 @@
-{{#each model as |question|}}
-  {{question-tile question = question}}
-{{/each}}
+<div class="row">
+  <div class="col-sm-6">
+    <div class="row overflown-entries" >
+      {{#each model as |question|}}
+      <div class="question-blocks">
+        {{question-tile question = question}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-sm-6">
+    {{new-question submitQuestion="submitQuestion" }}
+  </div>
 
-{{new-question submitQuestion="submitQuestion" }}
+</div>

@@ -15,7 +15,6 @@ export default Ember.Route.extend({
         this.transitionTo('question');
       },
 
-    //refractor to delete all answers associated as well
     destroyQuestion(question){
       var question_deletions = question.get('answers').map(function(answer){
         return answer.destroyRecord();

@@ -1,11 +1,60 @@
 body{
-  background-image: url("http://www.walldevil.com/wallpapers/a82/minimalist-wallpaper-background-desktop-wallpapers.jpg");
+  background-image: url("http://orig06.deviantart.net/b99b/f/2010/337/d/1/quiet_ambient_2_by_freakyframes-d3453cr.jpg");
   background-repeat: no-repeat;
 }
-.jumbotron{
-/*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/af/57/cf/af57cf2e9b2136202a2d377cacf8b6cd.png");*/
 
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.jumbotron{
+  margin-top: 2%;
+/*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/af/57/cf/af57cf2e9b2136202a2d377cacf8b6cd.png");*/
+}
+#askQ{
+text-align: center;
+}
+.question-blocks{
+  border-style: solid;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(242, 242, 242,.9);
+}
+
+.overflown-entries{
+  max-height: 70vh;
+  overflow:scroll;
+}
+.question-blocks:hover{
+  background-color: rgba(205, 205, 205,.7);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/*http://www.walldevil.com/wallpapers/a82/minimalist-wallpaper-background-desktop-wallpapers.jpg*/
+
+/*http://orig06.deviantart.net/b99b/f/2010/337/d/1/quiet_ambient_2_by_freakyframes-d3453cr.jpg*/
 
 /*https://awesomewallpapers.files.wordpress.com/2016/07/1920-clean.jpg*/

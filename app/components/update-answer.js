@@ -4,8 +4,6 @@ export default Ember.Component.extend({
   updateAnswerForm: false,
   actions:{
     editAnswer(answer){
-      //may need to add all params
-        
       var params = {
         content: this.get('content')
       }
