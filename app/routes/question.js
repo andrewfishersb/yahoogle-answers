@@ -17,7 +17,12 @@ export default Ember.Route.extend({
 
     //refractor to delete all answers associated as well
     destroyQuestion(question){
-      question.destroyRecord();
+      var question_deletions = question.get('answers').map(function(answer){
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(question_deletions).then(function(){
+        return question.destroyRecord();
+      });
       this.transitionTo('index');
     },
 
@@ -38,7 +43,6 @@ export default Ember.Route.extend({
 
     },
     editAnswer(answer, params){
-// console.log(params.content);
       Object.keys(params).forEach(function(key){
         if(params[key]!==undefined && params[key]!==''){
           answer.set(key,params[key]);
