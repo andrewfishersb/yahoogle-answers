@@ -9,6 +9,8 @@ export default Ember.Component.extend({
         content: this.get('content'),
         question: this.get('question')
       }
+      this.set('user',"");
+      this.set('content',"");
       this.set("newAnswerForm",false);
       this.sendAction("saveAnswer",params);
     },
@@ -17,6 +19,8 @@ export default Ember.Component.extend({
       this.set("newAnswerForm",true);
     },
     hideAnswerForm(){
+      this.set('user',"");
+      this.set('content',"");
       this.set("newAnswerForm",false);
     }
   }

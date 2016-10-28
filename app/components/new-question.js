@@ -18,6 +18,9 @@ export default Ember.Component.extend({
 
 
     hideQuestionForm(){
+      this.set('title',"");
+      this.set('user',"");
+      this.set('notes',"");
       this.set("newQuestionFormClicked",false);
     },
     showQuestionForm(){

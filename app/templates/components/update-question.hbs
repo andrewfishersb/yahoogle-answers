@@ -1,7 +1,7 @@
 {{#if newUpdateFormClicked}}
   <form class="form-group">
     <label>Edit Question</label>
-    {{input class="form-control" value=title id="title" placeholder="test"}}
+    {{input class="form-control" value=title id="title" }}
     <label>Edit Notes</label>
     {{input class="form-control" value=notes id="notes" }}
     <button class="btn btn-success" {{action "updateQuestion" question}}>Submit</button>
