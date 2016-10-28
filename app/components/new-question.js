@@ -5,22 +5,26 @@ export default Ember.Component.extend({
   actions: {
     submitQuestion(){
       var params = {
-        question: this.get('question')?this.get('question'):"",
-        user: this.get('user')?this.get('user'):"",
-        content: this.get('content')?this.get('content'):"",
-      }
+        question: this.get('question') ? this.get('question'):"",
+        user: this.get('user') ? this.get('user'):"",
+        notes: this.get('notes') ? this.get('notes'):"",
+      };
       this.set('question',"");
       this.set('user',"");
-      this.set('content',"");
+      this.set('notes',"");
+      this.set("newQuestionFormClicked",false);
       this.sendAction("submitQuestion",params);
-    }
-
+    },
+    //refractor to delete all answers associated as well
+    delete(question){
+      this.destroyRecord(question);
+    },
 
     hideQuestionForm(){
-      newQuestionFormClicked=false;
-    }
+      this.set("newQuestionFormClicked",false);
+    },
     showQuestionForm(){
-      newQuestionFormClicked = true;
+      this.set("newQuestionFormClicked", true);
     }
   }
 });
