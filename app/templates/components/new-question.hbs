@@ -1,1 +1,14 @@
-{{yield}}
+{{#if newQuestionFormClicked}}
+  <form class="form-group">
+    <label>Post Question</label>
+    {{input class="form-control" id="question" value=question}}
+    <label>Enter Username</label>
+    {{input class="form-control" id="user" value =user}}
+    <label>Add any extra notes</label>
+    {{input class="form-control" id="notes" value=notes}}
+    <button class="btn btn-success" {{action "submitQuestion"}}>Submit</button>
+    <button class="btn btn-danger" {{action "hideQuestionForm"}}>Cancel</button>
+  </form>
+{{else}}
+  <button class="btn btn-primary" {{action "showQuestionForm"}}>Submit</button>
+{{/if}}
