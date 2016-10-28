@@ -3,10 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   updateAnswerForm: false,
   actions:{
-    editAnswer(){
+    editAnswer(answer){
+      //may need to add all params
+        
       var params = {
         content: this.get('content')
       }
+      this.set('content','');
+      this.set("updateAnswerForm", false);
+      this.sendAction("editAnswer",answer, params);
     },
 
     hideAnswerForm(){
