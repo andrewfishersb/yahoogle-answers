@@ -12,7 +12,10 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
+    apiKey: "AIzaSyC2Iu85K2e7qB2VVaOJbyrKV5UxE-giO44",
+    authDomain: "ask-yahouora.firebaseapp.com",
+    databaseURL: "https://ask-yahouora.firebaseio.com",
+    storageBucket: "ask-yahouora.appspot.com",
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
