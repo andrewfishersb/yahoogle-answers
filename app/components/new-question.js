@@ -15,10 +15,7 @@ export default Ember.Component.extend({
       this.set("newQuestionFormClicked",false);
       this.sendAction("submitQuestion",params);
     },
-    //refractor to delete all answers associated as well
-    delete(question){
-      this.destroyRecord(question);
-    },
+    
 
     hideQuestionForm(){
       this.set("newQuestionFormClicked",false);
