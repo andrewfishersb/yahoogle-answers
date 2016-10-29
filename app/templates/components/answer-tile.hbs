@@ -1,4 +1,7 @@
-<h3>{{answer.content}}</h3>
-<h4>by {{answer.user}}</h4>
-{{update-answer answer=answer editAnswer="editAnswer"}}
-<button class="btn btn-danger" {{action 'delete' answer}}>Delete Answer</button>
+<div class="question-blocks">
+  <h3>{{answer.content}}</h3>
+  <h4>by {{answer.user}}</h4>
+  {{update-answer answer=answer editAnswer="editAnswer"}}
+  <button class="btn btn-danger form-control" {{action 'delete' answer}}>Delete Answer</button>
+
+</div>

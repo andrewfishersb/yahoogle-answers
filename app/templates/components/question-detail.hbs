@@ -1,13 +1,22 @@
-<h4>{{question.title}}</h4>
-<h5>{{question.user}}</h5>
-<h6>{{question.notes}}</h6>
-<p>
-  {{question.content}}
-</p>
-{{update-question question=question updateQuestion="updateQuestion"}}
-<button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
-{{#each question.answers as |answer|}}
-  {{answer-tile answer=answer destroyAnswer="destroyAnswer" editAnswer="editAnswer"}}
-{{/each}}
-
-{{new-answer saveAnswer="saveAnswer" question=question}}
+<div id="question-on-answer-page">
+  <h2>{{question.title}}</h2>
+  <h4>{{question.notes}}</h4>
+  <h5>by {{question.user}}</h5>
+  <div id="q-up-del-btns">
+    {{update-question question=question updateQuestion="updateQuestion"}}
+    <button class="btn btn-danger form-control" {{action 'delete' question}}>Delete Question</button>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="row" id="answer-padding">
+  <div class="col-sm-8 overflown-answers">
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer destroyAnswer="destroyAnswer" editAnswer="editAnswer"}}
+    {{/each}}
+  </div>
+  <div class="col-sm-4">
+    {{new-answer saveAnswer="saveAnswer" question=question}}
+  </div>
+</div>

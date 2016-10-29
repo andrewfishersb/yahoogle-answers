@@ -8,7 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.7);
 }
 
 li {
@@ -30,6 +30,7 @@ li a:hover {
 
 .jumbotron{
   margin-top: 2%;
+background-color: rgba(205, 205, 205,.5);
 /*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/af/57/cf/af57cf2e9b2136202a2d377cacf8b6cd.png");*/
 }
 #askQ{
@@ -41,10 +42,20 @@ text-align: center;
   text-align: center;
   border-radius: 10px;
   background-color: rgb(242, 242, 242,.9);
+  padding: 5px;
 }
-
+/*#answer-padding{*/
+  /*margin-top: 500px;*/
+/*}*/
+.row{
+  /*margin-bottom: 5px;*/
+}
 .overflown-entries{
   max-height: 70vh;
+  overflow:scroll;
+}
+.overflown-answers{
+  max-height: 55vh;
   overflow:scroll;
 }
 .question-blocks:hover{
@@ -52,6 +63,17 @@ text-align: center;
 }
 ::-webkit-scrollbar {
     display: none;
+}
+#question-on-answer-page{
+text-align: center;
+}
+.btn{
+  margin-top: 5px;
+}
+#q-up-del-btns{
+
+  margin-left: 18vw;
+  max-width: 50%;
 }
 /*http://www.walldevil.com/wallpapers/a82/minimalist-wallpaper-background-desktop-wallpapers.jpg*/
 
