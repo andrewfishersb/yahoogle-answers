@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         notes: this.get('notes')
-      }
+      };
       this.set("title","");
       this.set("notes","");
       this.set("newUpdateFormClicked", false);

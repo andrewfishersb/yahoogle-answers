@@ -1,8 +1,8 @@
 {{#if newAnswerForm}}
   <label>Enter Username</label>
-  {{input class="form-control" value=user id="user"}}
+  {{input class="form-control" value=user id="user" placeholder="Enter a username..."}}
   <label>Enter Answer</label>
-  {{input class="form-control" value=content id="content"}}
+  {{textarea  rows="4" class="form-control" value=content id="content" placeholder="Enter an answer..."}}
   <button class="btn btn-success form-control" {{action 'saveAnswer'}}>Submit Answer</button>
   <button class="btn btn-danger form-control" {{action 'hideAnswerForm'}}>Cancel</button>
 

@@ -1,11 +1,11 @@
 {{#if newQuestionFormClicked}}
   <form class="form-group">
     <label>Post Question</label>
-    {{input class="form-control" id="title" value=title }}
+    {{input class="form-control" id="title" value=title placeholder="Ask a Question..."}}
     <label>Enter Username</label>
-    {{input class="form-control" id="user" value =user}}
+    {{input class="form-control" id="user" value =user placeholder="Enter a username..."}}
     <label>Add any extra notes</label>
-    {{input class="form-control" id="notes" value=notes}}
+    {{textarea rows="3" class="form-control" id="notes" value=notes placeholder="Enter Additional Information..."}}
     <button class="btn btn-success form-control" {{action "submitQuestion"}}>Submit</button>
     <button class="btn btn-danger form-control" {{action "hideQuestionForm"}}>Cancel</button>
   </form>

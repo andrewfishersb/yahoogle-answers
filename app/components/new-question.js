@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   actions: {
     submitQuestion(){
       if(!this.get('title')){
-        alert("Please Enter a Question")
+        alert("Please Enter a Question");
       }else{
         var params = {
           title: this.get('title') ? this.get('title'):"",

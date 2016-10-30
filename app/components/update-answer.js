@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     editAnswer(answer){
       var params = {
         content: this.get('content')
-      }
+      };
       this.set('content','');
       this.set("updateAnswerForm", false);
       this.sendAction("editAnswer",answer, params);

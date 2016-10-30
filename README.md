@@ -1,7 +1,34 @@
 # Yahoogle-answers
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Lets Users ask questions_
+
+#### By _**Andrew Fisher**_
+
+## Description
+
+_This app lets a user ask a question and then other users may answer the asked question_
+
+
+## Specs
+1. _App can list preset question stored in database_
+
+2. _User can enter new questions alongside their username and any additional notes_
+  * _if no username is input, they are listed as anonymous_
+
+3. _User can delete their question, username and notes_
+
+4. _User can edit their question and any additional notes_
+
+5. _Another user can answer a question and provide their username_
+  * _if no username is input, they are listed as anonymous_
+
+6. _User can delete their question and username_
+
+7. _User can edit their answer_
+
+8. _Refractored so when user deletes a question all associated answers are also deleted_
+
+
 
 ## Prerequisites
 
@@ -51,3 +78,18 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+  ## Technologies Used
+
+  * _JavaScript_
+  * _Ember_
+  * _Firebase_
+  * _Node_
+  * _Bower_
+  * _HTML_
+  * _CSS_
+
+  ### License
+
+  *GPL*
+
+  Copyright (c) 2016 **_Andrew Fisher_**

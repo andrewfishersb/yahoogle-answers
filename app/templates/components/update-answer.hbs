@@ -1,8 +1,8 @@
 {{#if updateAnswerForm}}
   <label>Edit Answer</label>
-  {{input class="form-control" value=content id="content" placeholder="Enter an Answer..."}}
+  {{textarea rows="3" class="form-control" value=content id="content" placeholder="Enter an Answer..."}}
   <button class="btn btn-success form-control" {{action 'editAnswer' answer}}>Submit Answer</button>
-  <button class="btn btn-danger form-control" {{action 'hideAnswerForm'}}>Cancel</button>
+  <button class="btn btn-warning form-control" {{action 'hideAnswerForm'}}>Cancel</button>
 {{else}}
   <button class="btn btn-info form-control" {{action 'showAnswerForm'}}>Edit Answer</button>
 {{/if}}
