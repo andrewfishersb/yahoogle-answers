@@ -78,7 +78,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-  ## Technologies Used
+## Technologies Used
 
   * _JavaScript_
   * _Ember_
@@ -88,8 +88,8 @@ Specify what it takes to deploy your app.
   * _HTML_
   * _CSS_
 
-  ### License
+### License
 
-  *GPL*
+*GPL*
 
-  Copyright (c) 2016 **_Andrew Fisher_**
+Copyright (c) 2016 **_Andrew Fisher_**
