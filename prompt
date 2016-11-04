@@ -16,3 +16,22 @@ If you have completed the objectives for the code review, consider adding some a
 Add custom styling.
 Implement upvote/downvote functionality so that users may vote on answers.
 Add tags to questions.
+
+
+2.) Continuation of Question & Answer Board
+Continue developing the Question and Answer message board application from last week's independent project and code review by integrating the Ember features and functionality we learned this week.
+
+Implement at least one computed property.
+Possible Ideas: Allow users to upvote the answer they think is best, then sort answers by number of upvotes. Or display the number of answers each question has with a computed property.
+Add a helper.
+Possible Ideas: Nicely-formatted timestamps on questions and/or answers, a formatting change or special icon for questions with no answers, or questions with large numbers of answers, a formatting change or special icon for the answer with the most upvotes, etc.
+Integrate a service.
+Possible Ideas: Allow users to create lists of favorite questions or answers to reference later.
+Further Exploration
+
+Allow users to upvote and downvote questions. Then, sort questions by number of votes.
+Create an admin area.
+Include additional computed properties.
+Use a nested route, if applicable.
+Implement a feature that uses a Firebase query.
+Integrate tags or categories to further organize questions.
