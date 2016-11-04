@@ -4,4 +4,5 @@ export default DS.Model.extend({
   user: DS.attr(),
   content: DS.attr(),
   question: DS.belongsTo('question', {async: true}),
+  upvote: DS.attr()
 });

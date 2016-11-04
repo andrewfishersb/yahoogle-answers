@@ -1,22 +1,60 @@
-{"questions":[
-    {
-      "title" : "Do Sea Turtles live for 150 years?",
-      "notes" : "because they say so in Finding Nemo",
-      "user":"FindingNemoFanatic"
-    },{
-      "title" : "What is the longest living animal?",
-      "notes" : "asking for a research project",
-      "user" : "ILikeTurtlesZombieKid"
-    },{
-      "title" : "What is the main language used for Android or iOS Programming?",
-      "notes" : "I want to try my hand at mobile programming",
-      "user": "wannabeBillionaire"
-
+{
+  "answers" : {
+    "-KVCgYhpi8mhFVawxm6t" : {
+      "content" : "Java",
+      "question" : "2",
+      "user" : "Android Man",
+      "upvotes": 0
     },
-    {
-      "title" : "Which is faster Merge Sort or Quick Sort",
-      "notes" : "studying my data structures",
-      "user":"DataStructureGuru"
+    "-KVCgbIAEgXcJKvUiq_j" : {
+      "content" : "Swift or Objective-C",
+      "question" : "2",
+      "user" : "iOs Man",
+      "upvotes": 0
+    },
+    "-KVCj3bpELf-BhD-9RJ2" : {
+      "content" : "80-100 years on average, so 150 years is not still young like the movie claims",
+      "question" : "0",
+      "user" : "Scientist",
+      "upvotes": 0
+    },
+    "-KVSOBMjGquq72HeN1_j" : {
+      "content" : "who me o I'm good",
+      "question" : "-KVSO-cRgKg3Qe5sg6Du",
+      "user" : "tyler",
+      "upvotes": 0
     }
-  ]
+  },
+  "questions" : {
+    "0" : {
+      "answers" : {
+        "-KVCj3bpELf-BhD-9RJ2" : true
+      },
+      "notes" : "because they say so in Finding Nemo",
+      "title" : "Do Sea Turtles live for 150 years?",
+      "user" : "FindingNemoFanatic"
+    },
+    "2" : {
+      "answers" : {
+        "-KVCgYhpi8mhFVawxm6t" : true,
+        "-KVCgbIAEgXcJKvUiq_j" : true
+      },
+      "notes" : "I want to try my hand at mobile programming",
+      "title" : "What is the main language used for Android or iOS Programming?",
+      "user" : "wannabeBillionaire"
+    },
+    "3" : {
+      "notes" : "studying my data structures",
+      "title" : "Which is faster Merge Sort or Quick Sort",
+      "user" : "DataStructureGuru"
+    },
+    "-KVSO-cRgKg3Qe5sg6Du" : {
+      "answers" : {
+        "-KVSOBMjGquq72HeN1_j" : true
+      },
+      "notes" : "Just wodering",
+      "title" : "How's it going?",
+      "user" : "Tyler"
+    }
+  }
 }
