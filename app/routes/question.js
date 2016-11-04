@@ -59,8 +59,14 @@ export default Ember.Route.extend({
 
     downVote(answer){
       var downVote = answer.get('vote')-1;
-      answer.set('vote',downVote);
-      answer.save();
+      if(downVote<-5){
+        answer.destroyRecord();
+        this.transitionTo('question');
+      }else{
+        answer.set('vote',downVote);
+        answer.save();  
+      }
+
     }
 
   }

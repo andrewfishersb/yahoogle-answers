@@ -105,5 +105,5 @@ Specify what it takes to deploy your app.
 ### License
 
 *GPL*
-
+known bug click the favorite button then go to another page, when come back it doesnt say un-favorite and thus can add again. Any advice?
 Copyright (c) 2016 **_Andrew Fisher_**
