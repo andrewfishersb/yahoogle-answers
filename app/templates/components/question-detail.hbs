@@ -12,7 +12,7 @@
 <br>
 <div class="row" id="answer-padding">
   <div class="col-sm-8 overflown-answers">
-    {{#each question.answers as |answer|}}
+    {{#each sortedUpvotes as |answer|}}
       {{answer-tile answer=answer destroyAnswer="destroyAnswer" editAnswer="editAnswer" upVote="upVote"}}
     {{/each}}
   </div>

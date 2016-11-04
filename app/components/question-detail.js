@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  sortBy: ['upvote:desc'],
+  sortedUpvotes: Ember.computed.sort('question.answers', 'sortBy'),
   actions:{
     delete(question){
       if(confirm("Are you sure?")){

@@ -57,8 +57,6 @@ export default Ember.Route.extend({
       console.log(upVote);
       answer.set('upvote',upVote);
       answer.save();
-
-
     }
 
   }
