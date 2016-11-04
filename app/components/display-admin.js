@@ -5,10 +5,16 @@ export default Ember.Component.extend({
   adminCensorAnswers: Ember.inject.service(),
   actions: {
     dismissAnswerClaim(answer){
-
+      this.get('adminCensorAnswers').remove(answer);
     },
-    dismissQuestionClaim(){
-      
+    dismissQuestionClaim(question){
+      this.get('adminCensor').remove(question);
+    },
+    deleteReportedAnswer(answer){
+      this.sendAction('deleteReportedAnswer', answer);
+    },
+    deleteQuestion(question){
+      this.sendAction('deleteQuestion',question);
     }
   }
 });
