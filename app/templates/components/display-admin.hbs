@@ -1,0 +1,24 @@
+<h2>Reported Question</h2>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Question</th>
+        <th>Notes</th>
+        <th>User</th>
+        <th>Dismiss</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each adminCensor.reportedEntries as |reported|}}
+      <tr>
+        <td>{{reported.title}}</td>
+        <td>{{reported.notes}}</td>
+        <td>{{reported.user}}</td>
+        <td><button class="btn btn-success glyphicon glyphicon-ok" name="button"></button></td>
+        <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button"></button></td>
+      </tr>
+    {{/each}}
+</tbody>
+
+</table>
