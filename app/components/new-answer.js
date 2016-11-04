@@ -11,7 +11,7 @@ export default Ember.Component.extend({
           user: this.get('user') ? this.get('user'):"anonymous",
           content: this.get('content'),
           question: this.get('question'),
-          upvote: 0
+          vote: 0
         };
         this.set('user',"");
         this.set('content',"");

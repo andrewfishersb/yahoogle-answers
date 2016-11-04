@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortBy: ['upvote:desc'],
+  sortBy: ['vote:desc'],
   sortedUpvotes: Ember.computed.sort('question.answers', 'sortBy'),
   actions:{
     delete(question){

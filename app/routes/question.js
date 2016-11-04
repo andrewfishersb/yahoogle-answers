@@ -52,16 +52,14 @@ export default Ember.Route.extend({
     },
 
     upVote(answer){
-      var upVote = answer.get('upvote')+1;
-      answer.set('upvote',upVote);
+      var upVote = answer.get('vote')+1;
+      answer.set('vote',upVote);
       answer.save();
     },
 
     downVote(answer){
-      // console.log("upvote initial: " + answer.get('upvote'));
-      var downVote = answer.get('upvote')-1;
-      console.log("got here");
-      answer.set('upvote',downVote);
+      var downVote = answer.get('vote')-1;
+      answer.set('vote',downVote);
       answer.save();
     }
 
