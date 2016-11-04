@@ -1,5 +1,4 @@
 <h1>Favorite Questions</h1>
 {{#each favoriteQuestions.favorites as |favorite|}}
-  <h2>{{#link-to 'question' favorite.id}}{{favorite.title}}{{/link-to}} <button class="btn btn-danger" {{action 'removeFromFavorites' question}}><span class="glyphicon glyphicon-heart-empty"></span> Unlike</button></h2>
-
+  <h2>{{#link-to 'question' favorite.id}}{{favorite.title}}{{/link-to}} <button class="btn btn-danger pull-right" {{action 'removeFromFavorites' favorite}}><span class="glyphicon glyphicon-heart-empty"></span> Un-Favorite</button></h2>
 {{/each}}
