@@ -19,6 +19,9 @@ export default Ember.Component.extend({
     editAnswer(answer, params){
 
       this.sendAction('editAnswer',answer, params);
+    },
+    upVote(answer){
+      this.sendAction('upVote',answer);
     }
   }
 });

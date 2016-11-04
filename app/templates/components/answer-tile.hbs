@@ -1,6 +1,7 @@
 <div class="question-blocks">
   <h3>{{answer.content}}</h3>
   <h4>by {{answer.user}}</h4>
+  <h4>Upvotes: {{answer.upvote}} <button class="btn btn-primary glyphicon glyphicon-thumbs-up" {{action 'upVote' answer}}></button></h4>
   {{update-answer answer=answer editAnswer="editAnswer"}}
   <button class="btn btn-danger form-control" {{action 'delete' answer}}>Delete Answer</button>
 

@@ -49,6 +49,16 @@ export default Ember.Route.extend({
       });
       answer.save();
       this.transitionTo('question');
+    },
+    upVote(answer){
+      console.log("Got to end " + answer);
+      console.log(answer.get('upvote'));
+      var upVote = answer.get('upvote')+1;
+      console.log(upVote);
+      answer.set('upvote',upVote);
+      answer.save();
+
+
     }
 
   }
