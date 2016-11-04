@@ -64,11 +64,8 @@ export default Ember.Route.extend({
         this.transitionTo('question');
       }else{
         answer.set('vote',downVote);
-        answer.save();  
+        answer.save();
       }
-
     }
-
   }
-
 });
