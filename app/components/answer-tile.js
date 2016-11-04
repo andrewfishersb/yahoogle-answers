@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  adminCensorAnswers: Ember.inject.service(),
   actions:{
     delete(answer){
       this.sendAction("destroyAnswer",answer);
@@ -14,5 +15,9 @@ export default Ember.Component.extend({
     downVote(answer){
       this.sendAction('downVote',answer);
     },
+    reportAnswer(answer){
+      alert("An Admin will look into this report momentarily");
+      this.get('adminCensorAnswers').add(answer);
+    }
   }
 });

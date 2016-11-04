@@ -1,24 +1,46 @@
 <h2>Reported Question</h2>
+<table class="table table-striped admin-table">
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Notes</th>
+          <th>User</th>
+          <th>Dismiss</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      {{#each adminCensor.reportedEntries as |question|}}
+        <tr>
+          <td>{{question.title}}</td>
+          <td>{{question.notes}}</td>
+          <td>{{question.user}}</td>
+          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button"></button></td>
+          <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button"></button></td>
+        </tr>
+      {{/each}}
+  </tbody>
+</table>
+<h2>Reported Answers</h2>
 <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Question</th>
-        <th>Notes</th>
-        <th>User</th>
-        <th>Dismiss</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody>
-    {{#each adminCensor.reportedEntries as |reported|}}
-      <tr>
-        <td>{{reported.title}}</td>
-        <td>{{reported.notes}}</td>
-        <td>{{reported.user}}</td>
-        <td><button class="btn btn-success glyphicon glyphicon-ok" name="button"></button></td>
-        <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button"></button></td>
-      </tr>
-    {{/each}}
-</tbody>
-
+      <thead>
+        <tr>
+          <th>Answer</th>
+          <th>Notes</th>
+          <th>User</th>
+          <th>Dismiss</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each adminCensorAnswers.reportedAnswers as |answer|}}
+        <tr>
+          <td>{{answer.title}}</td>
+          <td>{{answer.notes}}</td>
+          <td>{{answer.user}}</td>
+          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button"></button></td>
+          <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button"></button></td>
+        </tr>
+      {{/each}}
+  </tbody>
 </table>

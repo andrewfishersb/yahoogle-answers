@@ -4,9 +4,9 @@
     {{input class="form-control" value=title id="title" placeholder="Enter a Question..."}}
     <label>Edit Notes</label>
     {{textarea rows="3" class="form-control" value=notes id="notes" placeholder="Enter Additional Information..."}}
-    <button class="btn btn-success form-control" {{action "updateQuestion" question}}>Submit</button>
-    <button class="form-control btn btn-warning" {{action "hideUpdateForm"}}>Cancel</button>
+    <button class="btn btn-success " {{action "updateQuestion" question}}>Submit</button>
+    <button class=" btn btn-warning" {{action "hideUpdateForm"}}>Cancel</button>
   </form>
 {{else}}
-  <button class="btn btn-info form-control" {{action "showUpdateForm"}}>Edit Question</button>
+  <button class="btn btn-info " {{action "showUpdateForm"}}>Edit Question</button>
 {{/if}}

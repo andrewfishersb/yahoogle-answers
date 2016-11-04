@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   sortBy: ['vote:desc'],
   sortedUpvotes: Ember.computed.sort('question.answers', 'sortBy'),
+  adminCensor: Ember.inject.service(),
   actions:{
     delete(question){
       if(confirm("Are you sure?")){
@@ -28,5 +29,9 @@ export default Ember.Component.extend({
     downVote(answer){
       this.sendAction('downVote',answer);
     },
+    reportAbuse(entry){
+      alert("An Admin will look into this report momentarily")
+      this.get('adminCensor').add(entry)
+    }
   }
 });

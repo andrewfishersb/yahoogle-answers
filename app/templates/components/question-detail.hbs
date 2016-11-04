@@ -3,10 +3,11 @@
   <h4>{{question.notes}}</h4>
   <h5>by {{question.user}}</h5>
   <h5>{{time-format question}}</h5>
-  <div id="q-up-del-btns">
+  <div class="q-up-del-btns">
     {{update-question question=question updateQuestion="updateQuestion"}}
-    <button class="btn btn-danger form-control" {{action 'delete' question}}>Delete Question</button>
+    <button class="btn btn-danger " {{action 'delete' question}}>Delete Question</button>
   </div>
+  <h6><a {{action 'reportAbuse' question}}>Report Abuse</a></h6>
 </div>
 <br>
 <br>
@@ -20,4 +21,5 @@
   <div class="col-sm-4">
     {{new-answer saveAnswer="saveAnswer" question=question}}
   </div>
+  
 </div>

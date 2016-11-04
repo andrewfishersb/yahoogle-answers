@@ -3,6 +3,8 @@ body{
   background-repeat: no-repeat;
 }
 
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -70,12 +72,15 @@ text-align: center;
 .btn{
   margin-top: 5px;
 }
-#q-up-del-btns{
+.q-up-del-btns{
+  text-align: center;
 
-  margin-left: 18vw;
-  max-width: 50%;
 }
 
 .vote-block{
   padding-top: 63px;
+}
+
+.admin-table{
+  margin-bottom: 100px;
 }
