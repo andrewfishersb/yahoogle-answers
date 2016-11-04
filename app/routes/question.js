@@ -1,9 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
   model(params){
     return this.store.findRecord('question',params.question_id);
   },
+  favoriteQuestions: Ember.inject.service(),
   actions:{
     updateQuestion(updatedQuestion, params) {
         Object.keys(params).forEach(function(key){
@@ -16,6 +18,7 @@ export default Ember.Route.extend({
       },
 
     destroyQuestion(question){
+      this.get('favoriteQuestions').remove(question);
       var question_deletions = question.get('answers').map(function(answer){
         return answer.destroyRecord();
       });
@@ -37,6 +40,7 @@ export default Ember.Route.extend({
       this.transitionTo('question',question);
     },
     destroyAnswer(answer){
+      this.get('favoriteQuestions').remove(answer);
       answer.destroyRecord();
       this.transitionTo('question');
 
