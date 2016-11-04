@@ -2,7 +2,7 @@
   <h2>{{question.title}}</h2>
   <h4>{{question.notes}}</h4>
   <h5>by {{question.user}}</h5>
-  <h5>{{question.time}}</h5>
+  <h5>{{time-format question}}</h5>
   <div id="q-up-del-btns">
     {{update-question question=question updateQuestion="updateQuestion"}}
     <button class="btn btn-danger form-control" {{action 'delete' question}}>Delete Question</button>

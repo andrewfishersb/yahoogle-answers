@@ -12,6 +12,7 @@
 
       <h3>{{answer.content}}</h3>
       <h4>by {{answer.user}}</h4>
+      <h5>{{time-format answer}}</h5>
       {{update-answer answer=answer editAnswer="editAnswer"}}
       <button class="btn btn-danger form-control" {{action 'delete' answer}}>Delete Answer</button>
     </div>

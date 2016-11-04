@@ -12,7 +12,7 @@ export default Ember.Component.extend({
           content: this.get('content'),
           question: this.get('question'),
           vote: 0,
-          time: moment().format("dddd, MMMM Do YYYY, h:mm a"),
+          time: moment().unix()*1000
         };
         this.set('user',"");
         this.set('content',"");

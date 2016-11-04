@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         notes: this.get('notes'),
-        time: moment().format("dddd, MMMM Do YYYY, h:mm a")
+        time: moment().unix()*1000
       };
       this.set("title","");
       this.set("notes","");
