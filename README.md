@@ -36,6 +36,10 @@ _This app lets a user ask a question and then other users may answer the asked q
 
 12. _Users can downvote answers, if below -5 the answer is removed from the database_
 
+13. _Users can report abuse on question or answers_
+
+14. _An admin can look through the reports of abuse and either dismiss and case or delete the question or answer from the database_
+
 
 ## Prerequisites
 
@@ -50,9 +54,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* change into the new directory
-possiby ember install ember-moment
-and how to fix if cant find
+* `ember install ember-moment`
 * `npm install`
 * `bower install`
 
@@ -75,9 +77,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
@@ -97,15 +96,11 @@ Specify what it takes to deploy your app.
   * _HTML_
   * _CSS_
 
-## Future Ideas
-  * _stop user from re adding a favorite question alert button that prevents the change_
-  * _change button after pressing like_
-   *  _and maybe make it remove from favorites_
-  * _admin page that submitted answers are sent for approval_
-  * _report abuse page that send the comment or question to the admin page to delete_
+## Known Bugs
 
+* _When the user clicks the favorite button then goes to another page, when come back it doesn't say un-favorite and thus the user can add that question to their favorites again. Any advice?_
 ### License
 
 *GPL*
-known bug click the favorite button then go to another page, when come back it doesnt say un-favorite and thus can add again. Any advice?
+
 Copyright (c) 2016 **_Andrew Fisher_**
