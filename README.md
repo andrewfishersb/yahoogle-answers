@@ -28,6 +28,11 @@ _This app lets a user ask a question and then other users may answer the asked q
 
 8. _Refractored so when user deletes a question all associated answers are also deleted_
 
+9. _User can favorite a question and displayed on a new route_
+
+10. _User can remove the favorited question_
+
+11. _Users can upvote answers_
 
 
 ## Prerequisites
@@ -87,6 +92,13 @@ Specify what it takes to deploy your app.
   * _Bower_
   * _HTML_
   * _CSS_
+
+## Future Ideas
+  * _stop user from re adding a favorite question alert button that prevents the change_
+  * _change button after pressing like_
+   *  _and maybe make it remove from favorites_
+  * _admin page that submitted answers are sent for approval_
+  * _report abuse page that send the comment or question to the admin page to delete_
 
 ### License
 
