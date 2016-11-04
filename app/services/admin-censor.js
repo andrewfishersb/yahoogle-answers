@@ -7,6 +7,6 @@ export default Ember.Service.extend({
     this.get('reportedEntries').pushObject(entry);
   },
   remove(entry){
-    this.get('reportedEntries').removeObject(entry)
+    this.get('reportedEntries').removeObject(entry);
   }
 });

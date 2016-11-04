@@ -30,8 +30,8 @@ export default Ember.Component.extend({
       this.sendAction('downVote',answer);
     },
     reportAbuse(entry){
-      alert("An Admin will look into this report momentarily")
-      this.get('adminCensor').add(entry)
+      alert("An Admin will look into this report momentarily");
+      this.get('adminCensor').add(entry);
     }
   }
 });

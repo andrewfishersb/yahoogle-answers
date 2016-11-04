@@ -3,41 +3,43 @@ body{
   background-repeat: no-repeat;
 }
 
-
-
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.7);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.7);
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+  background-color: #111;
+}
+
+#question-on-answer-page{
+  text-align: center;
+}
+
+#askQ{
+  text-align: center;
 }
 
 .jumbotron{
   margin-top: 2%;
-background-color: rgba(205, 205, 205,.5);
-/*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/af/57/cf/af57cf2e9b2136202a2d377cacf8b6cd.png");*/
+  background-color: rgba(205, 205, 205,.5);
 }
-#askQ{
-text-align: center;
-}
+
 .question-blocks{
   border-style: solid;
   margin: 10px;
@@ -46,12 +48,8 @@ text-align: center;
   background-color: rgb(242, 242, 242,.9);
   padding: 5px;
 }
-/*#answer-padding{*/
-  /*margin-top: 500px;*/
-/*}*/
-.row{
-  /*margin-bottom: 5px;*/
-}
+
+
 .overflown-entries{
   max-height: 70vh;
   overflow:scroll;
@@ -63,12 +61,7 @@ text-align: center;
 .question-blocks:hover{
   background-color: rgba(205, 205, 205,.7);
 }
-::-webkit-scrollbar {
-    display: none;
-}
-#question-on-answer-page{
-text-align: center;
-}
+
 .btn{
   margin-top: 5px;
 }
@@ -83,4 +76,8 @@ text-align: center;
 
 .admin-table{
   margin-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
