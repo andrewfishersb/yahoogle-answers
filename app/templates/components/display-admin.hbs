@@ -15,7 +15,7 @@
           <td>{{question.title}}</td>
           <td>{{question.notes}}</td>
           <td>{{question.user}}</td>
-          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button"></button></td>
+          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button" {{action 'dismissQuestionClaim' question}}></button></td>
           <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button"></button></td>
         </tr>
       {{/each}}
@@ -26,7 +26,7 @@
       <thead>
         <tr>
           <th>Answer</th>
-          <th>Notes</th>
+          <th>Question</th>
           <th>User</th>
           <th>Dismiss</th>
           <th>Delete</th>
@@ -35,10 +35,10 @@
       <tbody>
         {{#each adminCensorAnswers.reportedAnswers as |answer|}}
         <tr>
-          <td>{{answer.title}}</td>
-          <td>{{answer.notes}}</td>
+          <td>{{answer.content}}</td>
+          <td>{{answer.question.title}}</td>
           <td>{{answer.user}}</td>
-          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button"></button></td>
+          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button" {{action 'dismissAnswerClaim' answer}}></button></td>
           <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button"></button></td>
         </tr>
       {{/each}}
