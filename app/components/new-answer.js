@@ -11,7 +11,8 @@ export default Ember.Component.extend({
           user: this.get('user') ? this.get('user'):"anonymous",
           content: this.get('content'),
           question: this.get('question'),
-          vote: 0
+          vote: 0,
+          time: moment().format("dddd, MMMM Do YYYY, h:mm a"),
         };
         this.set('user',"");
         this.set('content',"");

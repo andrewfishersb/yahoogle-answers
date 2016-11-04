@@ -6,7 +6,8 @@ export default Ember.Component.extend({
     updateQuestion(updatedQuestion){
       var params = {
         title: this.get('title'),
-        notes: this.get('notes')
+        notes: this.get('notes'),
+        time: moment().format("dddd, MMMM Do YYYY, h:mm a")
       };
       this.set("title","");
       this.set("notes","");

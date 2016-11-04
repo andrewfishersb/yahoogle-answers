@@ -49,7 +49,8 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * change into the new directory
-possiby ember install ember-font-awesome
+possiby ember install ember-moment
+and how to fix if cant find
 * `npm install`
 * `bower install`
 

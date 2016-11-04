@@ -11,7 +11,9 @@ export default Ember.Component.extend({
           title: this.get('title') ? this.get('title'):"",
           user: this.get('user') ? this.get('user'):"anonymous",
           notes: this.get('notes') ? this.get('notes'):"",
+          time: moment().format("dddd, MMMM Do YYYY, h:mm a")
         };
+        
         this.set('title',"");
         this.set('user',"");
         this.set('notes',"");

@@ -5,7 +5,8 @@ export default Ember.Component.extend({
   actions:{
     editAnswer(answer){
       var params = {
-        content: this.get('content')
+        content: this.get('content'),
+        time: moment().format("dddd, MMMM Do YYYY, h:mm a")
       };
       this.set('content','');
       this.set("updateAnswerForm", false);
