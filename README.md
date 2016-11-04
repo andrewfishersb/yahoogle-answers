@@ -34,6 +34,8 @@ _This app lets a user ask a question and then other users may answer the asked q
 
 11. _Users can upvote answers_
 
+12. _Users can downvote answers, if below -5 the answer is removed from the database_
+
 
 ## Prerequisites
 
