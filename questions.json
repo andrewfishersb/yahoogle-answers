@@ -3,66 +3,95 @@
     "-KVCgYhpi8mhFVawxm6t" : {
       "content" : "Java",
       "question" : "2",
+      "time" : 1477649565000,
       "user" : "Android Man",
-      "vote": 0,
-      "time":1477649565000
+      "vote" : 11
     },
     "-KVCgbIAEgXcJKvUiq_j" : {
       "content" : "Swift or Objective-C",
       "question" : "2",
+      "time" : 1477685565000,
       "user" : "iOs Man",
-      "vote": 0,
-      "time":1477685565000
+      "vote" : 9
     },
     "-KVCj3bpELf-BhD-9RJ2" : {
       "content" : "80-100 years on average, so 150 years is not still young like the movie claims",
-      "question" : "0",
+      "question" : "1",
+      "time" : 1478275965000,
       "user" : "Scientist",
-      "vote": 0,
-      "time":1478275965000
+      "vote" : 6
     },
     "-KVSOBMjGquq72HeN1_j" : {
       "content" : "who me o I'm good",
-      "question" : "-KVSO-cRgKg3Qe5sg6Du",
+      "question" : "4",
+      "time" : 1478045565000,
       "user" : "tyler",
-      "vote": 0,
-      "time":1478045565000
+      "vote" : 3
+    },
+    "-KVlawiJ95wxuywpFgcH" : {
+      "content" : "THIS IS AN ABUSIVE TROLL COMMENT I AM A MEAN PERSON AND I AM YELLING IN ALL CAPS, I DARE YOU TO REPORT ME!!!!!!",
+      "question" : "2",
+      "time" : 1478301092000,
+      "user" : "TROLOLOLOLOLOLOL",
+      "vote" : 10
+    },
+    "-KVlbLsYDyk1HXZtCUzH" : {
+      "content" : "I BET YOU CANT DOWN VOTE ME PAST -5",
+      "question" : "0",
+      "time" : 1478301199000,
+      "user" : "DARE",
+      "vote" : -5
+    },
+    "-KVlbVsvGaW5CbxBa4mv" : {
+      "content" : "BET YOU CANT GET UNDER -5",
+      "question" : "1",
+      "time" : 1478301240000,
+      "user" : "TRY AND DOWN VOTE ME",
+      "vote" : -5
+    },
+    "-KVlboUhAS6pPNeC3KIF" : {
+      "content" : "TRY TO GET PAST - 5",
+      "question" : "2",
+      "time" : 1478301321000,
+      "user" : "BET YOU CANT DOWNVOTE ME",
+      "vote" : -5
     }
   },
-  "questions" : {
-    "0" : {
-      "answers" : {
-        "-KVCj3bpELf-BhD-9RJ2" : true
-      },
-      "notes" : "because they say so in Finding Nemo",
-      "title" : "Do Sea Turtles live for 150 years?",
-      "user" : "FindingNemoFanatic",
-      "time":1477696365000
+  "questions" : [ {
+    "answers" : {
+      "-KVlbLsYDyk1HXZtCUzH" : true
     },
-    "2" : {
-      "answers" : {
-        "-KVCgYhpi8mhFVawxm6t" : true,
-        "-KVCgbIAEgXcJKvUiq_j" : true
-      },
-      "notes" : "I want to try my hand at mobile programming",
-      "title" : "What is the main language used for Android or iOS Programming?",
-      "user" : "wannabeBillionaire",
-      "time":1477692765000
+    "notes" : "Feel free to report me for abuse",
+    "time" : 1477696365000,
+    "title" : "This is an inapproriate question",
+    "user" : "ReportMeForAbuse"
+  }, {
+    "answers" : {
+      "-KVCj3bpELf-BhD-9RJ2" : true,
+      "-KVlbVsvGaW5CbxBa4mv" : true
     },
-    "3" : {
-      "notes" : "studying my data structures",
-      "title" : "Which is faster Merge Sort or Quick Sort",
-      "user" : "DataStructureGuru",
-      "time":1477689165000
+    "notes" : "because they say so in Finding Nemo",
+    "time" : 1477696365000,
+    "title" : "Do Sea Turtles live for 150 years?",
+    "user" : "FindingNemoFanatic"
+  }, {
+    "answers" : {
+      "-KVCgYhpi8mhFVawxm6t" : true,
+      "-KVCgbIAEgXcJKvUiq_j" : true,
+      "-KVlawiJ95wxuywpFgcH" : true,
+      "-KVlboUhAS6pPNeC3KIF" : true
     },
-    "-KVSO-cRgKg3Qe5sg6Du" : {
-      "answers" : {
-        "-KVSOBMjGquq72HeN1_j" : true
-      },
-      "notes" : "Just wodering",
-      "title" : "How's it going?",
-      "user" : "Tyler",
-      "time":1478041965000
-    }
-  }
+    "notes" : "I want to try my hand at mobile programming",
+    "time" : 1477692765000,
+    "title" : "What is the main language used for Android or iOS Programming?",
+    "user" : "wannabeBillionaire"
+  }, null, {
+    "answers" : {
+      "-KVSOBMjGquq72HeN1_j" : true
+    },
+    "notes" : "Just wodering",
+    "time" : 1478041965000,
+    "title" : "How's it going?",
+    "user" : "Tyler"
+  } ]
 }
