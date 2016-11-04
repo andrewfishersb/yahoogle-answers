@@ -1,7 +1,7 @@
 <h4 class="pull-left">{{question-popularity question}}</h4>
 <h2>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h2>
 <h4>by {{question.user}}</h4>
-<h5>{{time-format question}}</h5>
+<h5>Posted On: {{time-format question}}</h5>
 {{#if unFavoriteBox}}
   <button class="btn btn-danger" {{action 'removeFromFavorites' question}}><span class="glyphicon glyphicon-heart-empty"></span> Un-Favorite</button>
 {{else}}

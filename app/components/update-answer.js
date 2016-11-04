@@ -6,7 +6,6 @@ export default Ember.Component.extend({
     editAnswer(answer){
       var params = {
         content: this.get('content'),
-        time: moment().unix()*1000
       };
       this.set('content','');
       this.set("updateAnswerForm", false);

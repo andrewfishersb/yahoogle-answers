@@ -100,6 +100,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 ## Known Bugs
 
 * _When the user clicks the favorite button then goes to another page, when come back it doesn't say un-favorite and thus the user can add that question to their favorites again. Any advice?_
+
 ### License
 
 *GPL*

@@ -2,7 +2,7 @@
   <h2>{{question.title}}</h2>
   <h4>{{question.notes}}</h4>
   <h5>by {{question.user}}</h5>
-  <h5>{{time-format question}}</h5>
+  <h5>Posted On: {{time-format question}}</h5>
   <div class="q-up-del-btns">
     {{update-question question=question updateQuestion="updateQuestion"}}
     <button class="btn btn-danger " {{action 'delete' question}}>Delete Question</button>
@@ -21,5 +21,5 @@
   <div class="col-sm-4">
     {{new-answer saveAnswer="saveAnswer" question=question}}
   </div>
-  
+
 </div>

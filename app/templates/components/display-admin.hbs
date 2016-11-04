@@ -1,46 +1,46 @@
 <h2>Reported Question</h2>
 <table class="table table-striped admin-table">
-      <thead>
-        <tr>
-          <th>Question</th>
-          <th>Notes</th>
-          <th>User</th>
-          <th>Dismiss</th>
-          <th>Delete</th>
-        </tr>
-      </thead>
-      <tbody>
-      {{#each adminCensor.reportedEntries as |question|}}
-        <tr>
-          <td>{{question.title}}</td>
-          <td>{{question.notes}}</td>
-          <td>{{question.user}}</td>
-          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button" {{action 'dismissQuestionClaim' question}}></button></td>
-          <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button" {{action 'deleteQuestion' question}}></button></td>
-        </tr>
-      {{/each}}
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Notes</th>
+      <th>User</th>
+      <th>Dismiss</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each adminCensor.reportedEntries as |question|}}
+      <tr>
+        <td>{{question.title}}</td>
+        <td>{{question.notes}}</td>
+        <td>{{question.user}}</td>
+        <td><button class="btn btn-success glyphicon glyphicon-ok" name="button" {{action 'dismissQuestionClaim' question}}></button></td>
+        <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button" {{action 'deleteQuestion' question}}></button></td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>
 <h2>Reported Answers</h2>
 <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Answer</th>
-          <th>Question</th>
-          <th>User</th>
-          <th>Dismiss</th>
-          <th>Delete</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each adminCensorAnswers.reportedAnswers as |answer|}}
-        <tr>
-          <td>{{answer.content}}</td>
-          <td>{{answer.question.title}}</td>
-          <td>{{answer.user}}</td>
-          <td><button class="btn btn-success glyphicon glyphicon-ok" name="button" {{action 'dismissAnswerClaim' answer}}></button></td>
-          <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button" {{action 'deleteReportedAnswer' answer}}></button></td>
-        </tr>
-      {{/each}}
+  <thead>
+    <tr>
+      <th>Answer</th>
+      <th>Question</th>
+      <th>User</th>
+      <th>Dismiss</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each adminCensorAnswers.reportedAnswers as |answer|}}
+      <tr>
+        <td>{{answer.content}}</td>
+        <td>{{answer.question.title}}</td>
+        <td>{{answer.user}}</td>
+        <td><button class="btn btn-success glyphicon glyphicon-ok" name="button" {{action 'dismissAnswerClaim' answer}}></button></td>
+        <td><button class="btn btn-danger glyphicon glyphicon-remove" name="button" {{action 'deleteReportedAnswer' answer}}></button></td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>
