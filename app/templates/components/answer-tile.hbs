@@ -1,8 +1,19 @@
-<div class="question-blocks">
-  <h3>{{answer.content}}</h3>
-  <h4>by {{answer.user}}</h4>
-  <h4>Upvotes: {{answer.upvote}} <button class="btn btn-primary glyphicon glyphicon-thumbs-up" {{action 'upVote' answer}}></button></h4>
-  {{update-answer answer=answer editAnswer="editAnswer"}}
-  <button class="btn btn-danger form-control" {{action 'delete' answer}}>Delete Answer</button>
+<div class="row">
+  <div class="col-sm-1 vote-block">
 
+  </div>
+  <div class="col-sm-11">
+    <div class="question-blocks">
+      <div class="pull-left">
+        <span class="glyphicon glyphicon-menu-up" {{action 'upVote' answer}}></span>
+        <h4>{{answer.upvote}} </h4>
+        <span class="glyphicon glyphicon-menu-down" {{action 'downVote' answer}}></span>
+      </div>
+
+      <h3>{{answer.content}}</h3>
+      <h4>by {{answer.user}}</h4>
+      {{update-answer answer=answer editAnswer="editAnswer"}}
+      <button class="btn btn-danger form-control" {{action 'delete' answer}}>Delete Answer</button>
+    </div>
+  </div>
 </div>

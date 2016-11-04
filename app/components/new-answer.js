@@ -10,7 +10,8 @@ export default Ember.Component.extend({
         var params = {
           user: this.get('user') ? this.get('user'):"anonymous",
           content: this.get('content'),
-          question: this.get('question')
+          question: this.get('question'),
+          upvote: 0
         };
         this.set('user',"");
         this.set('content',"");

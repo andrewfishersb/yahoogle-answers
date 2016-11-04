@@ -24,6 +24,9 @@ export default Ember.Component.extend({
     },
     upVote(answer){
       this.sendAction('upVote',answer);
-    }
+    },
+    downVote(answer){
+      this.sendAction('downVote',answer);
+    },
   }
 });
