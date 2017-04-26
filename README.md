@@ -1,8 +1,12 @@
 # Yahoogle-answers
 
-#### _Lets Users ask questions_
-
 #### By _**Andrew Fisher**_
+
+## Description
+
+_This is an app for asking and answering questions_
+
+## Images
 
 ![ScreenShot](https://cloud.githubusercontent.com/assets/17396138/25399960/f6fbbe6e-29a5-11e7-96f7-3d5c2ba9b493.png)
 
@@ -10,13 +14,28 @@
 
 ![ScreenShot](https://cloud.githubusercontent.com/assets/17396138/25399983/02c35cde-29a6-11e7-89e1-cc785efefd8a.png)
 
-## Description
+## User Stories
 
-_This app lets a user ask a question and then other users may answer the asked question_
+* As a user, I want to be able to create a question.
+* As a user, I want to be able to edit my question.
+* As a user, I want to be able to answer a question.
+* As a user, I want to be able to edit an answer.
+* As a user, I want to be able to upvote or downvote answers.
+* As a user, I want to be able to flag inappropriate questions or answers.
+* As an administrator, I want to be able to view flagged questions and answers.
+* As an administrator, I want to be able to delete flagged questions and answers.
+* As an administrator, I want to be able to dismiss falsley flagged questions and answers.
 
 
-## Specs
-1. _App can list preset question stored in database_
+
+## Specifications
+* On opening homepage:
+  - Any previously asked questions will be displayed
+  - A user can post a question accompanied by a user name and any extra notes about their question.
+    * If the username is left blank the username will be posted as "anonymous".
+  - A user can favorite a question.
+  - A user can report a question as inappropriate. 
+ 
 
 2. _User can enter new questions alongside their username and any additional notes_
   * _if no username is input, they are listed as anonymous_
