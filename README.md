@@ -4,7 +4,7 @@
 
 ## Description
 
-_This is an app for asking and answering questions_
+_This web app is a Question and Answer board, emulating sites such as Yahoo Answers or Quora._
 
 ## Images
 
@@ -31,40 +31,43 @@ _This is an app for asking and answering questions_
 ## Specifications
 * On opening homepage:
   - Any previously asked questions will be displayed
-  - A user can post a question accompanied by a user name and any extra notes about their question.
+  - A user can post a question accompanied by a user name and any extra notes about their question, this is then saved into a database.
     * If the username is left blank the username will be posted as "anonymous".
   - A user can favorite a question.
-  - A user can report a question as inappropriate. 
- 
+  - A user can report a question as inappropriate.
+  - If a question has more than three answers it is marked with a fire symbol.
 
-2. _User can enter new questions alongside their username and any additional notes_
-  * _if no username is input, they are listed as anonymous_
+  * On any questions page:
+    - A user can edit or delete the question.
+    - A user can report a question as inappropriate.
+    - A user can add an answer to the question and will then be added to a database.
+    - A user can then edit or delete their question.
+    - A user can report an answer as inappropriate.
+    - A user can upvote or downvote an answer.
+      * if a post reaches -6 downvotes it is automatically deleted.
 
-3. _User can delete their question, username and notes_
+  * On the Administrator page:
+    - The administrator can view questions and answers that have been reported as inappropriate, the username.
+    - The administrator can choose to delete the question or answer.
+    - The administrator can choose to dismiss the question or answer if they deem it appropriate.
 
-4. _User can edit their question and any additional notes_
+* On favorites page:
+  - A user can view questions they have favorited
+  - A user can remove questions from favorites.
 
-5. _Another user can answer a question and provide their username_
-  * _if no username is input, they are listed as anonymous_
+## Technologies Used
 
-6. _User can delete their question and username_
+  * _JavaScript_
+  * _Ember_
+  * _Firebase_
+  * _Node_
+  * _Bower_
+  * _HTML_
+  * _CSS_
 
-7. _User can edit their answer_
+## Known Bugs
 
-8. _Refractored so when user deletes a question all associated answers are also deleted_
-
-9. _User can favorite a question and displayed on a new route_
-
-10. _User can remove the favorited question_
-
-11. _Users can upvote answers_
-
-12. _Users can downvote answers, if below -5 the answer is removed from the database_
-
-13. _Users can report abuse on question or answers_
-
-14. _An admin can look through the reports of abuse and either dismiss and case or delete the question or answer from the database_
-
+  * _When the user clicks the favorite button then goes to another page, when come back it doesn't say un-favorite and thus the user can add that question to their favorites again. Any advice?_
 
 ## Prerequisites
 
@@ -88,9 +91,7 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -102,6 +103,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
+### Code Generators
+
+Make use of the many generators for code, try `ember help generate` for more details
 
 ## Further Reading / Useful Links
 
@@ -111,19 +115,6 @@ Make use of the many generators for code, try `ember help generate` for more det
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-## Technologies Used
-
-  * _JavaScript_
-  * _Ember_
-  * _Firebase_
-  * _Node_
-  * _Bower_
-  * _HTML_
-  * _CSS_
-
-## Known Bugs
-
-* _When the user clicks the favorite button then goes to another page, when come back it doesn't say un-favorite and thus the user can add that question to their favorites again. Any advice?_
 
 ### License
 
